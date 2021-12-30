@@ -1,5 +1,5 @@
 {% set name = "gradsflow" %}
-{% set version = "0.0.7.post2" %}
+{% set version = "0.0.8.dev0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 04ae44f963e91503ba235254eff96bfee65ec3ed6eb340d2e53e5fd8ca3d2729
+  sha256: b24f834ba9b71878ae09c20a8512d10bfcf9245365d42e3b8b9ae5bf6b7db0cb
 
 build:
   number: 0
@@ -30,7 +30,6 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - flit-core >=3.2,<4
   run:
     - python >=3.7
     - accelerate >=0.5.0
@@ -42,7 +41,7 @@ requirements:
     - timm
     - pytorch >=1.4
     - torchvision
-    - torchmetrics >=0.6.0
+    - torchmetrics >=0.5.0
 
 test:
   imports:

@@ -1,5 +1,5 @@
 {% set name = "gradsflow" %}
-{% set version = "0.0.7.post2" %}
+{% set version = "0.0.8.dev1" %}
 
 
 package:
@@ -8,23 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 04ae44f963e91503ba235254eff96bfee65ec3ed6eb340d2e53e5fd8ca3d2729
+  sha256: ba0940cedcaa991aa02e4432dbb67c2d7155b24942fd688bd73abed98d745a9d
 
 build:
   number: 0
   noarch: python
-  script:
-    # TODO: remove when issue gets fixed
-    # - removing "tests/" folder from {{ name }} downloaded tar.gz
-    # - the following lines (rm -rf tests/) and (rmdir -r tests/)
-    #   will not be necessary once the issue gradsflow/gradsflow#140 
-    #   has been closed.
-    #
-    # - https://github.com/gradsflow/gradsflow/issues/140
-    - echo -e "\n>>>  REMOVING tests/ folder from {{ name }}...  <<<\n"
-    - rm -rf tests/  # [not win]
-    - rmdir -r tests/  # [win]
-    - {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -73,3 +62,4 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    - aniketmaurya

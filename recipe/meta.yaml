@@ -1,5 +1,5 @@
 {% set name = "gradsflow" %}
-{% set version = "0.0.8.dev1" %}
+{% set version = "0.0.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ba0940cedcaa991aa02e4432dbb67c2d7155b24942fd688bd73abed98d745a9d
+  sha256: 40f82ba5c62cfd7eefe73678808ad6cd2088531282cda3bd8e04a5ced39960f3
 
 build:
   number: 0
@@ -23,11 +23,11 @@ requirements:
   run:
     - python >=3.7
     - accelerate >=0.5.0
-    - loguru >=0.5    
+    - loguru >=0.5
     - ray-default >=1.6.0
     - ray-tune >=1.6.0
     - rich
-    - smart_open >=5.1    
+    - smart_open >=5.1
     - timm
     - pytorch >=1.4
     - torchvision

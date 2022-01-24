@@ -24,7 +24,7 @@ requirements:
     - python >=3.7
     - accelerate >=0.5.0
     - loguru >=0.5
-    - ray-core >=1.6.0
+    - ray-default >=1.6.0
     - ray-tune >=1.6.0
     - rich
     - smart_open >=5.1

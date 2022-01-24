@@ -11,7 +11,7 @@ source:
   sha256: 40f82ba5c62cfd7eefe73678808ad6cd2088531282cda3bd8e04a5ced39960f3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -57,11 +57,14 @@ about:
     be used to train almost any PyTorch model. Though GradsFlow has its 
     own Model Training API it also supports PyTorch Lightning Flash to 
     provide more rich features across different tasks.
+    
+    PyPI: [https://pypi.org/project/gradsflow/](https://pypi.org/project/gradsflow/)
+
   doc_url: https://docs.gradsflow.com/
   dev_url: https://github.com/gradsflow/gradsflow
 
 extra:
   recipe-maintainers:
-    - aniketmaurya
     - sugatoray
+    # Maintainer(s) from Package Repo
     - aniketmaurya

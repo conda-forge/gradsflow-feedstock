@@ -23,6 +23,8 @@ be used to train almost any PyTorch model. Though GradsFlow has its
 own Model Training API it also supports PyTorch Lightning Flash to
 provide more rich features across different tasks.
 
+PyPI: [https://pypi.org/project/gradsflow/](https://pypi.org/project/gradsflow/)
+
 
 Current build status
 ====================

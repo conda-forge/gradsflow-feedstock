@@ -1,5 +1,5 @@
 {% set name = "gradsflow" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.8.post1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 40f82ba5c62cfd7eefe73678808ad6cd2088531282cda3bd8e04a5ced39960f3
+  sha256: 318108865894f98ce7e6d975529ea7754912b874870eb4f88f3283102d23a115
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -57,7 +57,7 @@ about:
     be used to train almost any PyTorch model. Though GradsFlow has its 
     own Model Training API it also supports PyTorch Lightning Flash to 
     provide more rich features across different tasks.
-    
+
     PyPI: [https://pypi.org/project/gradsflow/](https://pypi.org/project/gradsflow/)
 
   doc_url: https://docs.gradsflow.com/

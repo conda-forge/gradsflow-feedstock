@@ -34,6 +34,7 @@ requirements:
     - torchmetrics >=0.6.0
     - wandb >=0.12.9
     - tensorboard
+    - pydeprecate
 
 test:
   imports:

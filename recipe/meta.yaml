@@ -33,6 +33,7 @@ requirements:
     - torchvision
     - torchmetrics >=0.6.0
     - wandb >=0.12.9
+    - tensorboard
 
 test:
   imports:
